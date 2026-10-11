@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Question Bank</title>
+<meta name="theme-color" content="#3a3fd8">
+<script>
+  (function(){
+    var t=null;
+    try{t=localStorage.getItem('qb_theme');}catch(e){}
+    if(!t){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}
+    document.documentElement.setAttribute('data-theme',t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-in">
+    <button class="brand" data-act="home" aria-label="Go to home"><span class="brand-mark">Q</span><span id="siteTitle">Question Bank</span></button>
+    <div class="spacer"></div>
+    <button class="nav-btn" data-act="progress">My progress</button>
+    <button class="icon-btn" data-act="theme" id="themeBtn" aria-label="Switch dark or light mode"></button>
+  </div>
+</header>
+<main id="app"></main>
+<div id="modal"></div>
+<script src="app.js"></script>
+</body>
+</html>
