@@ -21,5 +21,7 @@ QB.section({
     {id:"schemes", name:"Government Schemes", icon:"🏛️"},
     {id:"bank", name:"Banking & Finance", icon:"🏦"},
     {id:"portf", name:"Government Portfolios", icon:"💼"}
+    {id:"state", name:"State Specific News", icon:"🗺️"},
+    {id:"summit", name:"Summit and Conferences", icon:"🤝"}
   ]
 });
